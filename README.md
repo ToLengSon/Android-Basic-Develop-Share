@@ -99,8 +99,7 @@
     - 不熟悉，貌似具有TableLayout的功能，但是比TableLayout更方便，可以设置行数与列数，并且可以做类似iOS的UICollectionView所做的功能；具体用法自行Google、百度
   - ConstraintLayout 约束布局
     - Google推荐，现在创建布局文件，默认容器是ConstraintLayout，不详解，因为我不会，感兴趣的可以自行Google、百度
-  
-- ### 四大组件
+
 - ### 常用第三方
 
   - Butter Knife
