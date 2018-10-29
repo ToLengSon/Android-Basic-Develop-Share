@@ -103,15 +103,19 @@
 - ### 常用第三方
 
   - Butter Knife
+
     - 为了解决重复性的findViewById，类比于iOS的@IBOutlet, @IBAction
   - Glide
+
     - 图片加载框架
   - Retrofit
+
     - 网络请求框架
   - ……
 
-- ###推荐书籍
+- ### 推荐书籍
 
   - Java SE篇：《Java核心技术》(卷1、卷2)
 
   - Android篇：《第一行代码——android》
+
