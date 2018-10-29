@@ -63,7 +63,7 @@
     - android:gravity: 视图内容对齐方式
     - 实际项目中经常使用
   - TableLayout 表格布局
-    - 类似于HTML中的<table>、<tr>、<td>标签，也可合并单元格
+    - 类似于HTML中的\<table\>、\<tr\>、\<td\>标签，也可合并单元格
     - 每一行都是一个TableRow视图容器，表格的列数也就是该行容纳的视图的个数，在列中的视图宽度都被设置为wrap_content
     - android:collapseColumns: 隐藏的列，索引从0开始
     - android:stretchColumns: 可拉伸的列，填充该行剩余空间，但是最小的宽度保证是wrap_content的
