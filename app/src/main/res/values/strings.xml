@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="title_activity_pass_value">PassValueActivity</string>
+    <string name="title_activity_broadcast">BroadcastActivity</string>
+</resources>

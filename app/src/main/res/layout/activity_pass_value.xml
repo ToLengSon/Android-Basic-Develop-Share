@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/fab_margin"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/pass_value_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        tools:text="传入的参数"/>
+    <EditText
+        android:id="@+id/pass_value_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入回传参数"
+        android:maxLines="5"/>
+    <Button
+        android:id="@+id/pass_value_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回传并返回" />
+</LinearLayout>

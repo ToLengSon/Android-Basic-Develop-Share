@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:collapseColumns="0"
+    android:stretchColumns="1"
+    android:shrinkColumns="2">
+
+    <TableRow>
+        <Button
+            android:layout_height="match_parent"
+            android:text="0" />
+        <Button
+            android:layout_height="match_parent"
+            android:text="1" />
+        <Button
+            android:layout_height="match_parent"
+            android:text="2" />
+        <Button
+            android:layout_height="match_parent"
+            android:text="3" />
+    </TableRow>
+</TableLayout>
