@@ -20,7 +20,10 @@
         <activity android:name=".activity.LayoutActivity" />
         <activity android:name=".activity.BroadcastActivity" />
         <activity android:name=".activity.ServiceActivity" />
-        <activity android:name=".activity.ContentProviderActivity"></activity>
+        <activity android:name=".activity.ContentProviderActivity"/>
+
+        <service android:name=".activity.ServiceActivity$ServiceService"/>
+
     </application>
 
 </manifest>

@@ -39,7 +39,13 @@
 
     - 使用方式：创建类继承Service，并且在manifest.xml中配置
     - 无UI，用在后台任务操作，例如：后台播放音乐，升级时下载apk等；
+    - 启动的基本操作：
+      - 启动服务：context.startService(intent, service.class);
+      - 停止服务：context.stopService(intent, service,class);
+      - 绑定服务：context.bindService(intent, connect, flag);
+      - 解绑服务：context.unbindService(connect);
     - 默认在主线程中执行，如Service执行耗时操作，请在子线程中开启服务，以免阻塞主线程导致ANR(Application Not Responding)异常
+    - 多个进程可使用同一个Service，需要使用AIDL(android接口定义语言)进行通信
 
   - #### Broadcast Receiver
 
@@ -52,6 +58,7 @@
 
   - #### Content Provider
 
+    - 应用向外部(其他app)提供数据的方式进行抽象化的接口被称为Content Provider，其他app通过该接口来操作当前app内部数据
     - 
 
 - ### 七大布局
@@ -69,7 +76,7 @@
     - android:stretchColumns: 可拉伸的列，填充该行剩余空间，但是最小的宽度保证是wrap_content的
     - android:shrinkColunms: 可收缩的列，当行空间不足时，被压缩
     - 实际项目中使用频率低
-  - FrameLayout 帪布局
+  - FrameLayout 帧布局
     - 层叠的方式添加视图，先添加的在最底层，最后一个添加的在视图层次最顶层
     - android:layout_gravity: 在父视图中对齐方式
     - 功能单一，性能相对于其他布局略高，在需要仅仅盛装子视图时可以使用；实际项目中使用频率低
