@@ -58,8 +58,9 @@
 
   - #### Content Provider
 
-    - 应用向外部(其他app)提供数据的方式进行抽象化的接口被称为Content Provider，其他app通过该接口来操作当前app内部数据
-    - 
+    - 应用向外部(其他app)提供数据的方式进行抽象化的接口被称为Content Provider，其他app通过该接口来操作当前app内部数据，而不是直接给其他app提供数据库读写权限，这种方式更加安全，可控
+    - ContentProvider：定义子类继承ContentProvider, 实现增删改查方法, 并在Mainfest.xml中配置，使用UriMatcher注册URI匹配规则；参考：https://blog.csdn.net/carson_ho/article/details/76101093
+    - ContentResolver：通过Context获取，可调用与ContentProvider对应的增删改查方法，当方法调用后，会触发ContentProvider对应的方法完成操作；注意：使用时判断是否需要权限，并在Mainfest.xml配置权限，如不知道是否需要也没关系，反正运行的时候会直接闪退，并且LogCat中会打印缺失的权限；在Android 6.0起，不仅仅Mainfest.xml中需要权限配置，也需要在代码中使用Activity的requestPermissions方法申请权限
 
 - ### 七大布局
 

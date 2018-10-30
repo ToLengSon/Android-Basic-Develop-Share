@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wsong.demo">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,9 +22,9 @@
         <activity android:name=".activity.LayoutActivity" />
         <activity android:name=".activity.BroadcastActivity" />
         <activity android:name=".activity.ServiceActivity" />
-        <activity android:name=".activity.ContentProviderActivity"/>
+        <activity android:name=".activity.ContentProviderActivity" />
 
-        <service android:name=".activity.ServiceActivity$ServiceService"/>
+        <service android:name=".activity.ServiceActivity$ServiceService" />
 
     </application>
 

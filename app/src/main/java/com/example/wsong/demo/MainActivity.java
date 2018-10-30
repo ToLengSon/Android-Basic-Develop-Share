@@ -157,7 +157,7 @@ public class MainActivity extends BaseActivity {
                 }
             }));
 
-            mDataList.add(new MainItemBean("访问系统相册", new MainItemBean.MainItemBeanAction() {
+            mDataList.add(new MainItemBean("获取联系人", new MainItemBean.MainItemBeanAction() {
                 @Override
                 public void onAction(MainItemBean itemBean) {
                     ContentProviderActivity.launch(MainActivity.this, itemBean.getTitle());
